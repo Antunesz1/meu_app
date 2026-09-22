@@ -1,11 +1,16 @@
 import 'usuario.dart';
 
 class Mensagem {
-  final Usuario autor;
-  final String texto;
+  Usuario autor;
+  String texto;
 
   Mensagem({
     required this.autor,
     required this.texto,
   });
+
+  @override
+  String toString() {
+    return '${autor.apelido}: $texto';
+  }
 }
