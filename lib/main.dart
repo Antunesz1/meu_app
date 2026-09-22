@@ -175,7 +175,7 @@ class TelaDartCord extends StatelessWidget {
 
             for (var mensagem in canalDart.mensagens)
               Text(
-                '${mensagem.autor.apelido}: ${mensagem.texto}',
+                mensagem.toString(),
                 style: const TextStyle(
                   fontSize: 16,
                 ),
